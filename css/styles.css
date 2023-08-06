@@ -679,11 +679,11 @@ nav {
 .footer-subscribe-form {
   display: flex;
   position: relative;
-
-  /* gap: 24px; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* align-items: flex-start; */
+  gap: 24px
+    /* gap: 24px; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* align-items: flex-start; */
 }
 
 .subscribe-input {
@@ -694,19 +694,19 @@ nav {
   border-radius: 4px;
   padding: 0;
   padding-left: 16px;
-  margin-right: 24px;
+  /* margin-right: 24px; */
   display: flex;
   align-items: center;
-  letter-spacing: 0.03;
+  letter-spacing: 0.04;
+  font-size: 12px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  color: var(--white-color);
 }
 
 .subscribe-input::placeholder {
-  /* padding: 8px 0px 8px 16px; */
   color: var(--white-color);
-  /* background-color: var(--dark-color); */
   font-size: 12px;
   line-height: 2;
-  /* letter-spacing: 0.04em; */
 }
 
 
@@ -717,15 +717,15 @@ nav {
   border: transparent;
   min-width: 165px;
   letter-spacing: 0.04em;
-  padding: 8px 0px 8px 24px;
+  padding: 8px 24px 8px 24px;
   display: flex;
-  gap: 16px;
-
+  justify-content: center;
 }
 
 
 .subscribe-icon {
   fill: var(--white-color);
+  margin-left: 16px;
 }
 
 /* modal window */
@@ -734,7 +734,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  min-height: 584px;
   background-color: rgba(46, 47, 66, 0.4);
   opacity: 1;
   visibility: visible;
@@ -916,8 +916,8 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   transition-property: background-color;
-  transition-duration: var(--slow-transform);
-  transition-timing-function: var(--trans-timing);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-text {
@@ -941,7 +941,7 @@ nav {
 
 .form-checkbox-icon .checked {
   opacity: 0;
-  transition: var(--slow-transform) var(--trans-timing);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-checkbox:checked+.form-checkbox-icon .checked {
@@ -985,8 +985,8 @@ nav {
 
   color: var(--white-color);
   transition-property: background-color;
-  transition-duration: var(--slow-transform);
-  transition-timing-function: var(--trans-timing);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
