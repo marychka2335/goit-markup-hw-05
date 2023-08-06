@@ -926,6 +926,10 @@ nav {
   margin-bottom: 20px;
 }
 
+.textarea-container {
+  margin-bottom: 16px;
+}
+
 .checkbox-container {
   margin-bottom: 24px;
 }
