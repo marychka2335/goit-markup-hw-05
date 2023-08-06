@@ -697,7 +697,7 @@ nav {
   /* margin-right: 24px; */
   display: flex;
   align-items: center;
-  letter-spacing: 0.04;
+  letter-spacing: 0.04em;
   font-size: 12px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   color: var(--white-color);
@@ -741,7 +741,6 @@ nav {
   pointer-events: initial;
   backdrop-filter: blur(1px);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px 24px;
 }
 
 .backdrop.is-hidden {
@@ -759,10 +758,11 @@ nav {
   min-height: 584px;
   border-radius: 4px;
   background-color: var(--modal-background-color);
-  /* box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14); */
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  padding: 72px 24px 24px 24px;
 }
 
 .modal-text {
