@@ -734,7 +734,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 584px;
+  height: 584px;
   background-color: rgba(46, 47, 66, 0.4);
   opacity: 1;
   visibility: visible;
